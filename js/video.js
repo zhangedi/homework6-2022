@@ -54,7 +54,7 @@ document.querySelector("#mute").addEventListener("click", function() {
 
 // volume slider
 
-document.querySelector("#slider").addEventListener("mousemove", function() {
+document.querySelector("#slider").addEventListener("click", function() {
 	console.log("adjust volume")
 	video.volume = this.value/100
 	document.querySelector("#volume").innerHTML = video.volume * 100 + "%"
